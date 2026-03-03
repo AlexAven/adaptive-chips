@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+  gap: 8px;
+}
+
+.chipWrapper {
+  visibility: hidden;
+}
+
+.chipWrapper.visible {
+  visibility: visible;
+}
+
+.chipWrapper.hidden {
+  visibility: hidden;
+}
+
+.popoverBtn {
+  anchor-name: --popover-anchor;
+  font-size: 14px;
+  font-weight: 800;
+  min-width: 55px;
+  padding: 14px 5px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.popover {
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgb(166, 163, 163);
+  max-width: 300px;
+
+  margin: 0;
+  inset: auto;
+  position-anchor: --popover-anchor;
+  top: anchor(bottom);
+  right: anchor(right);
+  margin-top: 12px;
+}
+
+.popoverContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px;
+}

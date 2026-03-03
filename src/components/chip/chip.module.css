@@ -1,0 +1,16 @@
+.chip {
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #5b6067;
+  border-radius: 50px;
+  border: 2px solid #ededed;
+  background-color: #ededed;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.chip:hover {
+  background-color: #e0e0e0;
+}
+.selected {
+  border: 2px solid #c4c1c1;
+}
